@@ -1,6 +1,6 @@
 # MLLM-RoadCrack 简单复现项目
 
-本项目根据 Zhang 等 2026 年论文 **“Multimodal large language model-driven framework for road crack assessment”** 做一个简单复现。目标不是搭建复杂工程框架，而是把论文的四个模块用最直接的脚本串起来，方便阅读、修改和跑通流程。
+本项目根据 Zhang 等 2026 年论文 **“Multimodal large language model-driven framework for road crack assessment”** 做一个简单复现。
 
 论文流程可以简化为：
 
@@ -8,8 +8,6 @@
 2. 分割模型得到裂缝二值掩膜；
 3. 根据掩膜计算裂缝长度和宽度；
 4. 汇总 JSON 结果，生成中文检测报告。
-
-当前项目重点实现了第 3 步裂缝量化。第 2 步默认用一个简单 Canny baseline 代替论文中的 DeepCrack、UNet、YOLO11-seg 等模型；如果你已经有分割掩膜，直接传入 `--mask` 即可。
 
 ## 目录结构
 
