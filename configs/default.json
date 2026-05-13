@@ -1,0 +1,21 @@
+{
+  "vlm": {
+    "api_key_env": "VLM_API_KEY",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "model": "qwen3-vl-plus",
+    "temperature": 0,
+    "max_tokens": 4096,
+    "timeout": 120
+  },
+  "quantification": {
+    "min_crack_area": 10,
+    "merge_threshold": 3,
+    "min_branch_length": 100,
+    "min_path_length": 20,
+    "max_gap": 300,
+    "dist_between_points": 30,
+    "length_threshold": 20,
+    "max_valid_width": 120
+  }
+}
+
