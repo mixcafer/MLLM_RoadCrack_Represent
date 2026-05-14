@@ -78,6 +78,32 @@ result = quantify_cracks(
 )
 ```
 
+也可以直接用 `data/processed` 下前 10 张二值掩膜测试：
+
+```bash
+python scripts/test_quantify.py
+```
+
+输出保存到：
+
+```text
+outputs/json/quantify_processed_10.json
+```
+
+生成单张图的骨架线和宽度采样线叠加可视化：
+
+```bash
+python scripts/visualize_quantify_sample.py
+```
+
+该脚本使用 `data/samples/7Q3A9060-1.jpg`，并按同名文件查找二值掩膜 `data/processed/7Q3A9060-1.png`。输出包括：
+
+```text
+outputs/visualizations/7Q3A9060-1_skeleton.png
+outputs/visualizations/7Q3A9060-1_overlay.png
+outputs/json/7Q3A9060-1_quantification.json
+```
+
 ## 配置文件
 
 论文中的主要超参数放在 `configs/default.json`：
